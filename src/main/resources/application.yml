@@ -1,0 +1,23 @@
+springdoc:
+  api-docs:
+    path: /swagger
+  swagger-ui:
+    path: '/swagger-ui.html'
+    disable-swagger-default-url: true
+
+spring:
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:starwarsdb
+    username: sa
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+        ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    defer-datasource-initialization: true        

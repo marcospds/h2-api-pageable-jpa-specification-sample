@@ -1,1 +1,5 @@
-# h2-api-pageable-jpa-specification-sample
+# Executar
+mvn spring-boot:run
+
+# Swagger
+http://localhost:8080/swagger-ui/index.html
